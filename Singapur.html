@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Singapur</title>
+    <style>
+        .card {
+            width: 300px;
+            height: 400px;
+            perspective: 2000px; /* Aumenta la perspectiva para un efecto de giro más pronunciado */
+            margin: 20px;
+            float: right;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.8s; /* Aumenta el tiempo de transición para un giro más lento */
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        .card-front {
+            background-size: cover;
+        }
+        .card-back {
+            background-color: #C5CD63;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px; /* Aumenta el espacio al voltearse */
+        }
+    </style>
+</head>
+<body bgcolor="#AAB248">
+    <h2><strong><center>Embárcate en una experiencia única en Singapur, donde la modernidad se encuentra con la tradición en una vibrante fusión cultural que te dejará sin aliento.</center></strong></h2>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('Gardens.jpeg');"></div>
+            <div class="card-back">
+                <h3>Gardens By The Bay</h3>
+                <p>Los Gardens by the Bay en Singapur son un testimonio del ingenio humano y la belleza natural en armonía. Este impresionante parque, ubicado en el corazón de la ciudad, combina paisajes exuberantes, diseño arquitectónico innovador y sostenibilidad para crear una experiencia única que cautiva a los visitantes de todo el mundo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('Jewel.jpeg');"></div>
+            <div class="card-back">
+                <h3>Jewel Changi Airport</h3>
+                <p>Jewel Changi Airport en Singapur es mucho más que un simple aeropuerto; es una maravilla arquitectónica y un destino en sí mismo que cautiva a los viajeros y locales por igual. Inaugurado en abril de 2019, este impresionante complejo se encuentra en el corazón del Aeropuerto Changi, uno de los aeropuertos más transitados y galardonados del mundo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('Sentosa.jpeg');"></div>
+            <div class="card-back">
+                <h3>Sentosa Sea Aquarium</h3>
+                <p>El S.E.A. Aquarium, ubicado en la vibrante isla de Sentosa en Singapur, es un destino imperdible para los amantes del océano y la vida marina. Como uno de los acuarios más grandes del mundo, ofrece una experiencia sumergida en la diversidad y la belleza de los ecosistemas marinos.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Agrega más tarjetas según sea necesario -->
+
+</body>
+</html>

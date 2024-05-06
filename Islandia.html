@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Islandia</title>
+    <style>
+        .card {
+            width: 300px;
+            height: 400px;
+            perspective: 2000px; /* Aumenta la perspectiva para un efecto de giro más pronunciado */
+            margin: 20px;
+            float: right;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.8s; /* Aumenta el tiempo de transición para un giro más lento */
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        .card-front {
+            background-size: cover;
+        }
+        .card-back {
+            background-color: #6192A8;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px; /* Aumenta el espacio al voltearse */
+        }
+    </style>
+</head>
+<body bgcolor="#76D4FF">
+    <h2><strong><center>Descubre la magia de Islandia: donde cada paisaje es una obra de arte natural esperando a ser explorada.</center></strong></h2>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('Kirk.jpeg');"></div>
+            <div class="card-back">
+                <h3>Kirkjufell</h3>
+                <p>Situada en la península de Snæfellsnes, en la costa oeste de Islandia, Kirkjufell se traduce como "Montaña de la Iglesia" debido a su forma distintiva que se asemeja a un campanario de iglesia. Esta singularidad le otorga un atractivo visual incomparable, especialmente cuando se refleja en las aguas circundantes durante las horas doradas del amanecer o el atardecer.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('Reikiavak.jpeg');"></div>
+            <div class="card-back">
+                <h3>Reikiavak</h3>
+                <p>Con su distintivo horizonte dominado por la iglesia Hallgrímskirkja y sus calles llenas de coloridos edificios, Reikiavik es un lugar lleno de encanto y energía. Los visitantes pueden explorar sus museos, disfrutar de la escena musical local, relajarse en sus piscinas geotérmicas o simplemente pasear por el pintoresco puerto. Con una mezcla única de tradición islandesa y modernidad, Reikiavik ofrece una experiencia inolvidable para los viajeros.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('Ping.jpeg');"></div>
+            <div class="card-back">
+                <h3>Pingvellir</h3>
+                <p>Situado en el cruce de la dorsal mesoatlántica y la falla tectónica de Islandia, Pingvellir es un sitio geológico excepcional donde los visitantes pueden contemplar de cerca la división entre las placas tectónicas euroasiática y norteamericana. Esta espectacular formación geológica no solo ofrece una vista impresionante de la naturaleza en acción, sino que también proporciona una perspectiva fascinante sobre la actividad sísmica de Islandia y su impacto en el paisaje.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Agrega más tarjetas según sea necesario -->
+
+</body>
+</html>
